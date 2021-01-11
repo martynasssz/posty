@@ -8,8 +8,8 @@
 
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
-<body class="bg-gray-100">
-    <nav class="p-6 bg-white flex justify-between" >
+ <body class="bg-gray-200"> {{--  spalva backgroundo  --}}
+    <nav class="p-6 bg-white flex justify-between mb-6" >
         <ul class="flex items-center">
             <li>
                 <a href="" class="p-3">Home</a>
@@ -30,10 +30,10 @@
                 <a href="" class="p-3">Login</a>
             </li>
             <li>
-                <a href="" class="p-3">Register</a>
+                <a href="{{ route('register') }}" class="p-3">Register</a>
             </li>
             <li>
-                <a href="" class="p-3">Logout</a>
+                <a href="/register" class="p-3">Logout</a>
             </li>
         </ul>
     </nav>
